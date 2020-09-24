@@ -4,8 +4,9 @@
 
 ## Installation required 
 
-[npm](https://nodejs.org/en/download/) or yarn
-[expo](https://expo.io/learn)
+> [npm](https://nodejs.org/en/download/) or yarn
+> [expo](https://expo.io/learn)
+
 
 ## Build Setup
 
@@ -15,7 +16,7 @@ npm install
 
 # serve with hot reload
 expo start
-(run on device or press 'w' to web)
+(run on your device downloading Expo App or press 'w' to web)
 ```
 
 APP will be running on http://localhost:19006/. Open it in your browser.
