@@ -84,7 +84,7 @@ export class Movies extends Component {
                  <Button
                    title="Detalhes"
                    color="#E1071F"
-                   accessibilityLabel="Página próxima"
+                   accessibilityLabel="Detalhes"
                    onPress={() => this.props.navigation.navigate('detail', { id: movie.id }) }
                  />
                </View>

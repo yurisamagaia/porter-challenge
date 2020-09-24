@@ -1,7 +1,7 @@
  
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { StyleSheet, Text, View, ActivityIndicator, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator, Image, ScrollView, Button } from 'react-native';
 import api from '../../service/api'
 import { API_KEY } from '../../service/api_key'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -42,6 +42,15 @@ export class Detail extends Component {
   render() {
    return (
      <View style={styles.container}>
+         <View style={styles.voltar}>
+            <Icon name='chevron-left' color='#000' style={styles.icon} />
+            <Button
+            title="Voltar"
+            color="#000"
+            accessibilityLabel="Voltar"
+            onPress={() => this.props.navigation.navigate('movies') }
+            />
+        </View>
        {this.state.loading ? (
          <View style={styles.loading}>
            <ActivityIndicator size="large" />
@@ -113,7 +122,7 @@ const mapDispatchToProps = dispatch => (
 const styles = StyleSheet.create({
  container: {
    flex: 1,
-   marginVertical: 20,
+   marginVertical: 10,
  },
  details: {
    alignItems: 'center'
@@ -185,6 +194,13 @@ const styles = StyleSheet.create({
  titleInfo: {
    fontWeight: 'bold',
    fontSize: 18
+ },
+ voltar: {
+     width: 100,
+     marginBottom: 15,
+     marginLeft: 15,
+     flexDirection: 'row',
+     alignItems: 'center'
  }
 });
  
