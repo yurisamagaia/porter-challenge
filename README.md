@@ -1,10 +1,11 @@
 # React Native challenge
 
-> A react native and redux application
+> An app to list movies using React Native and Redux, consumming a REST API
 
 ## Installation required 
 
 > [npm](https://nodejs.org/en/download/) or yarn
+
 > [expo](https://expo.io/learn)
 
 
